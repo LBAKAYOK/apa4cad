@@ -25,7 +25,7 @@ if (!isPraticienLoggedIn()) {
 //  FONCTIONS COPIÉES DE rapport.php
 // ═════════════════════════════════════════════════════════════════════════
 
-const FUSEKI_ENDPOINT_DETAIL = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT_DETAIL = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS_DETAIL = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 
 function sparqlQueryR(string $query): array {

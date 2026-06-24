@@ -5,7 +5,7 @@ require_once __DIR__ . '/patient_session.php';
 requirePathologiesSelected();  // redirige vers index.php si pas de pathologies
 requirePatientSelected();      // redirige vers patient.php si pas de patient
 
-const FUSEKI_ENDPOINT = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 
 // ── Utilitaires ───────────────────────────────────────────────────────────

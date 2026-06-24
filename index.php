@@ -49,7 +49,7 @@ if (isset($_GET['restart'])) {
     exit;
 }
 
-const FUSEKI_ENDPOINT = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 
 function sparqlQuery(string $query): array

@@ -10,7 +10,7 @@ if (isset($_GET['mode']) && $_GET['mode'] === 'explore') {
 }
 $EXPLORE_MODE = !empty($_SESSION['explore_mode'] ?? false);
 
-const FUSEKI_ENDPOINT = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 
 // ── Fonctions utilitaires ─────────────────────────────────────────────────

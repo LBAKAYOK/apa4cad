@@ -14,7 +14,7 @@ if ($prescriptionIdInUrl === '') {
     requirePatientSelected();
 }
 
-const FUSEKI_ENDPOINT = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS              = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 const OLLAMA_ENDPOINT = 'http://127.0.0.1:11434/api/generate';
 const OLLAMA_MODEL    = 'llama3.2:1b';
