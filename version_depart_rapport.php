@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/patient_session.php';
 
-const FUSEKI_ENDPOINT = 'http://localhost:3030/mononto/query';
+const FUSEKI_ENDPOINT = 'https://fuseki-apa4cad.onrender.com/mononto/query';
 const NS = 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#';
 
 // ── Fonctions utilitaires ─────────────────────────────────────────────────

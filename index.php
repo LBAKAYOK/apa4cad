@@ -69,7 +69,7 @@ function sparqlQuery(string $query): array
     $statusLine = $http_response_header[0] ?? '';
 
     if ($response === false) {
-        return ['ok' => false, 'error' => "Impossible de contacter Fuseki. Vérifie que Fuseki est lancé sur http://localhost:3030."];
+        return ['ok' => false, 'error' => "Impossible de contacter Fuseki. Vérifie que Fuseki est lancé sur https://fuseki-apa4cad.onrender.com."];
     }
 
     if ($statusLine !== '' && !str_contains($statusLine, '200')) {

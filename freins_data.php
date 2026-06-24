@@ -20,7 +20,7 @@ if (!defined('FREINS_NS')) {
     define('FREINS_NS', 'http://www.semanticweb.org/mmolina/ontologies/2025/11/untitled-ontology-50#');
 }
 if (!defined('FREINS_FUSEKI')) {
-    define('FREINS_FUSEKI', 'http://localhost:3030/mononto/query');
+    define('FREINS_FUSEKI', 'https://fuseki-apa4cad.onrender.com/mononto/query');
 }
 
 // ─── Helpers (préfixés F_ pour éviter les collisions avec patient.php) ───
