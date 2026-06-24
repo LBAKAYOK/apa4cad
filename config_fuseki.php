@@ -26,7 +26,8 @@ define('APP_ENV', getenv('APP_ENV') ?: 'local');
 // ============================================================
 
 // URL de base Fuseki : Render fournit la variable, sinon localhost par défaut
-define('FUSEKI_BASE_URL', getenv('FUSEKI_BASE_URL') ?: 'https://fuseki-apa4cad.onrender.com');
+define('FUSEKI_ADMIN_PASSWORD', getenv('FUSEKI_ADMIN_PASSWORD') ?: 'admin');
+define('FUSEKI_BASE_URL', getenv('FUSEKI_BASE_URL') ?: 'https://admin:' . (getenv('FUSEKI_ADMIN_PASSWORD') ?: 'admin') . '@fuseki-apa4cad.onrender.com');
 
 // Nom du dataset : modifiable via env, sinon 'mononto' par défaut
 define('FUSEKI_DATASET', getenv('FUSEKI_DATASET') ?: 'mononto');
