@@ -25,7 +25,8 @@ function sparqlUpdate($updateQuery) {
     curl_setopt($ch, CURLOPT_POSTFIELDS, $updateQuery);
     curl_setopt($ch, CURLOPT_HTTPHEADER, [
         'Content-Type: application/sparql-update; charset=utf-8',
-        'Accept: */*'
+        'Accept: */*',
+        'Authorization: Basic ' . base64_encode('admin:' . (getenv('FUSEKI_ADMIN_PASSWORD') ?: 'admin'))
     ]);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_TIMEOUT, 30);
