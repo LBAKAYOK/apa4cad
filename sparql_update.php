@@ -18,7 +18,7 @@ require_once __DIR__ . '/config_fuseki.php';
  * @return array ['success' => bool, 'http_code' => int, 'response' => string, 'error' => string|null]
  */
 function sparqlUpdate($updateQuery) {
-    $endpoint = FUSEKI_UPDATE_ENDPOINT;
+    $endpoint = str_replace('http://', 'https://', FUSEKI_UPDATE_ENDPOINT);
 
     $ch = curl_init($endpoint);
     curl_setopt($ch, CURLOPT_POST, true);
