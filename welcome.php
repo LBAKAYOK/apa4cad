@@ -148,7 +148,7 @@ body::before{content:"";position:fixed;inset:0;
             APA4CAD
         </div>
         <h1>Bienvenue sur APA4CAD</h1>
-        <p>Système d'aide à la prescription d'activité physique adaptée<br>basé sur une ontologie médicale.</p>
+        <p>Système d'aide à la prescription d'activité physique adaptée<br>basé sur une ontologie.</p>
     </div>
 
     <div class="modes">
