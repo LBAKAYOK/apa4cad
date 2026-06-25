@@ -30,7 +30,8 @@ require_once __DIR__ . '/../sparql_update.php';
 function sparqlP(string $query): array {
     $url = FUSEKI_QUERY_ENDPOINT . '?query=' . urlencode($query);
     $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Accept: application/sparql-results+json']);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Accept: application/sparql-results+json', 'Authorization: Basic ' . base64_encode('admin:' . (getenv('FUSEKI_ADMIN_PASSWORD') ?: 'admin'))]);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_TIMEOUT, 15);
     $resp = curl_exec($ch);
